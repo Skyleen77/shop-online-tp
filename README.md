@@ -8,7 +8,7 @@ git clone https://github.com/Skyleen77/shop-online-tp.git
 
 ## Installation
 
-### Install dependencies (intall pnpm if you don't have it)
+### Install dependencies (install pnpm if you don't have it)
 
 ```bash
 pnpm i
