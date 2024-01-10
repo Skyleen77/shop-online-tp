@@ -1,5 +1,11 @@
 # Shop online mirco service
 
+## Clone the repo
+
+```bash
+git clone https://github.com/Skyleen77/shop-online-tp.git
+```
+
 ## Installation
 
 ### Install dependencies (intall pnpm if you don't have it)
@@ -12,6 +18,15 @@ pnpm i
 
 ```bash
 docker run --name postgres-log-db -e POSTGRES_DB=shop_logger -e POSTGRES_USER=admin -e POSTGRES_PASSWORD=admin -p 5432:5432 -d postgres
+```
+
+### Generate the prisma client and migrate the db
+
+```bash
+cd apps/logger/
+npx prisma generate
+npx prisma db push
+cd ../..
 ```
 
 ### Run logger
@@ -32,4 +47,6 @@ pnpm logger:studio
 pnpm shop-app:dev
 ```
 
-/!\ You need to have shop online app and logger running to use the app /!\
+Go to http://localhost:3001
+
+/!\ You need to have shop online app, logger and Java api running to use the app /!\
