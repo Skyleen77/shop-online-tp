@@ -1,0 +1,33 @@
+{
+  "name": "shop-online-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "ui:add": "pnpm --filter ui ui:add",
+    "shop-app:dev": "pnpm --filter shop-app dev",
+    "logger:dev": "pnpm --filter logger dev",
+    "logger:studio": "pnpm --filter logger studio"
+  },
+  "devDependencies": {
+    "@turbo/gen": "latest",
+    "eslint": "latest",
+    "eslint-config-custom": "workspace:*",
+    "prettier": "^3.1.1",
+    "prisma": "^5.8.0",
+    "turbo": "latest"
+  },
+  "packageManager": "pnpm@8.9.0",
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.4",
+    "@prisma/client": "^5.8.0",
+    "axios": "^1.6.5",
+    "lucide-react": "^0.309.0",
+    "next-nprogress-bar": "^2.1.2",
+    "react-hook-form": "^7.49.3",
+    "zod": "^3.22.4"
+  }
+}

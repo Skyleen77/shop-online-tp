@@ -1,0 +1,28 @@
+{
+  "name": "shop-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "ui": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "autoprefixer": "latest",
+    "eslint-config-custom": "workspace:*",
+    "postcss": "latest",
+    "tailwindcss": "latest",
+    "tsconfig": "workspace:*",
+    "typescript": "latest"
+  }
+}
